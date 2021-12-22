@@ -1,28 +1,37 @@
 package tema4.Ejercicio1;
 
-public class SmartDevice {
-    public static String fabricante;
-    public static String modelo;
-    public String color;
-    public static int anyoFabricacion;
-    public static Double versionSO;
-    public static boolean conexionWifi;
+public class SmartDevice{
+
+    String fabricante;
+     String modelo;
+     String color;
+     int anyoFabricacion;
+     Double versionSO;
+     boolean conexionWifi;
 
 
-    public SmartDevice() {
+
+    public SmartDevice() {}
+
+    public SmartDevice(String fabricante, String modelo, String color, int anyoFabricacion, Double versionSO, boolean conexionWifi) {
+        this.fabricante = fabricante;
+        this.modelo = modelo;
+        this.color = color;
+        this.anyoFabricacion = anyoFabricacion;
+        this.versionSO = versionSO;
+        this.conexionWifi = conexionWifi;
+
     }
-
-    public SmartDevice(String fabricante, String modelo, int anyoFabricacion, Double versionSO, boolean conexionWifi) {
+/* public SmartDevice(String fabricante, String modelo, int anyoFabricacion, Double versionSO, boolean conexionWifi) {
         this.fabricante = fabricante;
         this.modelo = modelo;
         this.anyoFabricacion = anyoFabricacion;
         this.versionSO = versionSO;
         this.conexionWifi = conexionWifi;
     }
+*/
 
-
-    public static class SmartPhone extends SmartDevice {
-        public static boolean version;
+ /*   public static class SmartPhone extends SmartDevice {
         public static boolean camara;
         public static String tamanyo;
 
@@ -35,10 +44,9 @@ public class SmartDevice {
             this.camara = camara;
             this.tamanyo = tamanyo;
         }
+*/
 
-    }
-
-    public static class SmartWatch extends SmartDevice {
+ /*   public static class SmartWatch extends SmartDevice {
         public static boolean despertador;
         public static String colorCorrea;
 
@@ -52,14 +60,9 @@ public class SmartDevice {
             this.colorCorrea = colorCorrea;
         }
     }
+*/
+
 }
-
-
-
-
-
-
-
 
 
 
